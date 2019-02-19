@@ -1,13 +1,8 @@
 #!/usr/bin/python3
+from funkcje import *
 
 print("program lista gosci")
-lista_gosci = []
-
-imie="..."
-
-while imie:
-	imie = input("podaj imie zapraszanej osoby ")
-	if imie: lista_gosci.append(imie)
+lista_gosci = odczytaj_z_ekranu("podaj imie ")
 
 lista_gosci.sort()
 for imie in lista_gosci:
